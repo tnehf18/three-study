@@ -1,0 +1,58 @@
+html,
+body {
+  margin: 0;
+  font-family: Monaco, Consolas, 'Courier New';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #050505;
+  color: white;
+  overflow: hidden;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: wheat;
+  pointer-events: none;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+.controls {
+  padding: 8px 24px;
+  background: #0a0a0a;
+  height: 150px;
+}
+
+button {
+  margin-right: 8px;
+}
+
+.info {
+  color: #aaa;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
+  h3,
+  p {
+    font-size: 10px;
+  }
+}
+
+.canvas-placeholder {
+  height: calc(100vh - 170px);
+  width: calc(100vw - 6px);
+  background: black;
+  display: grid;
+  place-items: center;
+  border: 3px solid hotpink;
+}
