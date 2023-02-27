@@ -43,5 +43,5 @@ const Plane = ({ id, position, rotation }) => {
   )
 }
 
-useGLTF.preload(`${RAW_URL}{/asset/mesh/plane.gltf`);
+useGLTF.preload(`${RAW_URL}/asset/mesh/plane.gltf`);
 export default Plane;
