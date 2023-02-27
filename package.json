@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://tnehf18.github.io/three-study/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnehf18/three-study.git"
+  },
   "scripts": {
     "dev": "webpack-dev-server --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.prod.js"

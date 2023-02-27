@@ -10,10 +10,8 @@ import React, { useState } from 'react';
 import { useGLTF } from '@react-three/drei';
 // import { a } from '@react-spring/three'; // Can't build by webpack issue 
 
-const HOST = 'http://thehf18.github.io/three-study';
-
 const Plane = ({ id, position, rotation }) => {
-  const { nodes, materials } = useGLTF(`${HOST}/asset/mesh/plane.gltf`);
+  const { nodes, materials } = useGLTF(`../asset/mesh/plane.gltf`);
 
   materials['Material.001'].color = {
     r: parseInt(id.slice(0,2), 16) / 256,
@@ -43,5 +41,5 @@ const Plane = ({ id, position, rotation }) => {
   )
 }
 
-useGLTF.preload(`${HOST}/asset/mesh/plane.gltf`);
+useGLTF.preload(`../asset/mesh/plane.gltf`);
 export default Plane;

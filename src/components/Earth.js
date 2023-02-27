@@ -12,11 +12,10 @@ import { useGLTF } from '@react-three/drei'
 import Plane from './Plane'; 
 
 const LON_OFFSET = - Math.PI / 2;
-const HOST = 'http://thehf18.github.io/three-study';
 
 const Earth = ({ marker }) => {
   const [ isZoom, setIsZoom ] = useState(false);
-  const { nodes, materials } = useGLTF(`${HOST}/asset/mesh/earth.gltf`)
+  const { nodes, materials } = useGLTF(`../asset/mesh/earth.gltf`)
 
   const { lat, lon } = marker;
   const latRot = (lat * Math.PI / 180);
@@ -53,5 +52,5 @@ const Earth = ({ marker }) => {
   )
 }
 
-useGLTF.preload(`${HOST}/asset/mesh/earth.gltf`);
+useGLTF.preload(`../asset/mesh/earth.gltf`);
 export default Earth;

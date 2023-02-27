@@ -9,7 +9,7 @@ const getPlanes = (location) => {
   const [fetchCount, setFetchCount] = useState(0);
 
   const { lat, lon } = location || {lat: 37.5062528, lon: 126.8383744};
-  const url = `${API_URL}?lamin=${lat - BOUNDS_SIZE}&lomin${lon - BOUNDS_SIZE}&lamax=${lon + BOUNDS_SIZE}&lomax=${lon + BOUNDS_SIZE}`;
+  const url = `${API_URL}?lamin=${lat - BOUNDS_SIZE}&lomin=${lon - BOUNDS_SIZE}&lamax=${lat + BOUNDS_SIZE}&lomax=${lon + BOUNDS_SIZE}`;
 
   const fetchPlanes = useCallback(() => {
     if (fetchCount >= 2) return;
