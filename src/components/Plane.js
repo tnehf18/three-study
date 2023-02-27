@@ -10,7 +10,7 @@ import React, { useState } from 'react';
 import { useGLTF } from '@react-three/drei';
 // import { a } from '@react-spring/three'; // Can't build by webpack issue 
 
-const RAW_URL = 'https://raw.githubusercontent.com/tnehf18/three-study/main/public';
+const RAW_URL = `https://raw.githubusercontent.com/${AUTHOR}/${REPO}/${BRANCH}/public`;
 
 const Plane = ({ id, position, rotation }) => {
   const { nodes, materials } = useGLTF(`${RAW_URL}/asset/mesh/plane.gltf`);

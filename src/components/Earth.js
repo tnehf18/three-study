@@ -12,7 +12,7 @@ import { useGLTF } from '@react-three/drei'
 import Plane from './Plane'; 
 
 const LON_OFFSET = - Math.PI / 2;
-const RAW_URL = 'https://raw.githubusercontent.com/tnehf18/three-study/main/public';
+const RAW_URL = `https://raw.githubusercontent.com/${AUTHOR}/${REPO}/${BRANCH}/public`;
 
 const Earth = ({ marker }) => {
   const [ isZoom, setIsZoom ] = useState(false);

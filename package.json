@@ -12,7 +12,7 @@
     "dev": "webpack-dev-server --config config/webpack.dev.js",
     "build": "webpack --config config/webpack.prod.js"
   },
-  "author": "NOZ",
+  "author": "tnehf18",
   "license": "ISC",
   "browserslist": [
     "ie 11"
