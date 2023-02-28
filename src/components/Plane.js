@@ -26,7 +26,7 @@ const Plane = ({ id, position, rotation }) => {
   }
 
   return (
-    <group position={position} rotation={planeRotation} scale={0.01} dispose={null}>
+    <group position={position} rotation={planeRotation} scale={0.0075} dispose={null}>
       <group name="RootNode">
         <group name="Cylinder" position={[0, 0, 0]} scale={1}>
           <group name="Cylinder001" position={[0, 0, 1.8]} scale={0.3}>
