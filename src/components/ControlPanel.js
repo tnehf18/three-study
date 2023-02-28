@@ -26,9 +26,9 @@ function ControlPanel({ markers, activeMarkerId, setActiveMarkerId }) {
 		<span> | </span>
 		<span>Type:{markerTypeToEmoji(activeMarker.type)}</span>
 		<span> | </span>
-		<span>Lat: {activeMarker.lat.toFixed(2)}</span>
+		<span>Lat: {activeMarker.lat.toFixed(6)}</span>
 		<span> | </span>
-		<span>Lon: {activeMarker.lon.toFixed(2)}</span>
+		<span>Lon: {activeMarker.lon.toFixed(6)}</span>
 		{activeMarker.type === 'plane' && (
 		  <div>
 			<span>Distance from you: {activeMarker.distance.toFixed(2)} km</span>

@@ -2,7 +2,7 @@ import { useState, useCallback, useEffect } from 'react';
 import { calcDistance, calcRotation, samplePlanes } from '../utils/utils';
 
 const API_URL = 'https://opensky-network.org/api/states/all';
-const BOUNDS_SIZE = 2;
+const BOUNDS_SIZE = 4;
 
 const getPlanes = (location) => {
   const [planes, setPlanes] = useState([]);
